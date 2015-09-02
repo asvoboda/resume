@@ -1,0 +1,262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\hypersetup{
+  colorlinks=false,% hyperlinks will be black
+  linkbordercolor=blue,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Andrew}{Svoboda}{ % Your name
+\urlstyle{same}\url{http://andrewsvoboda.me} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:svoboda.andrew@gmail.com}{svoboda.andrew@gmail.com} % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+
+\descript{Honours Computer Engineering}
+\location{Grad. June 2015 | Waterloo ON}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Centennial C.V.I.}
+
+\location{Grad. June 2010 | Guelph, ON}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Core Skills}
+
+\subsection{Programming}
+
+\location{Proficient}
+Java \textbullet{} Python \textbullet{} C/C++ \\
+Javascript \textbullet{} R \\ 
+\location{Familiar}
+Ruby \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+SQL \textbullet{} Android \textbullet{} \LaTeX\
+
+\sectionspace % Some whitespace after the section
+
+\subsection{Utilities}
+git \textbullet{} OpenCL \textbullet{} OpenMP \\
+OpenCV
+
+\sectionspace % Some whitespace after the section
+
+\subsection{OS}
+*nix \textbullet{} Windows 
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+
+Operating Systems \\
+Distributed Systems \\
+Embedded Software \\
+Hardware and Software Codesign \\
+Algorithms \\
+Compilers \\
+Database Systems \\
+Computer Networks \\
+Programming for Performance 
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github:// \href{https://github.com/asvoboda}{\bf asvoboda} \\
+LinkedIn:// \href{https://ca.linkedin.com/pub/andrew-svoboda/80/645/667}{\bf Andrew Svoboda}
+
+%------------------------------------------------
+% Hobbies
+%------------------------------------------------
+
+\section{Hobbies}
+
+Homebrewing Beer \\
+Baking Bread \\
+Hackathons \\
+Coding and Breaking Things \\
+Murder Most Foul; Reading \\
+Drawing and Painting \\
+Analog Photography; Film Development \\
+Canadian History
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Personal Objectives
+%------------------------------------------------
+
+\section{Personal Objectives}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Gain additional experience with complex software systems and architecture design
+%\item Develop and improve hardware/firmware skills
+\item Reinforce and continue to develop high quality Software and Embedded Engineering skills
+\item Work on technically challenging and rewarding projects
+\end{tightitemize}
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{\href{https://www.palantir.com/}{Palantir}}
+\descript{| Simulation Software Engineering Intern}
+
+\location{Sept 2014 - Dec 2014 | Palo Alto, CA}
+\begin{tightitemize}
+\item Primarily focused on creating deployment automation and testing frameworks for product teams
+\item Implemented and helped to design concurrent testing strategy for automation of installation across multiple disparate product services
+\item Contributed to implementation of deployment automation for product teams by providing packaging and publishing Gradle tasks
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{\href{https://www.workmarket.com/}{WorkMarket}}
+\descript{| Serious Software Engineering Intern}
+
+\location{Sept 2013 - Dec 2013 | New York, NY}
+\begin{tightitemize}
+\item Actively maintained the platform, fixing numerous bugs and issues while pushing new features to production daily
+\item Created infrastructure for push notifications on the back-end system and modified the iOS and Android mobile clients to support push notifications
+\item Updated internal build and deployment system to be more reliable and robust
+\item Upgraded internal infrastructure for monitoring application performance and health
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{\href{http://www.kontagent.com/}{Kontagent (now Upsight)}}
+\descript{| Software Engineering Intern}
+
+\location{Jan 2013 - Apr 2013 | San Francisco, CA}
+\begin{tightitemize}
+\item Contributed heavily to two major customer facing projects (Cohort Analysis, Datamine) from software design to implementation to maintenance in production
+\item Created a sharing and notification system within Datamine to allow users to write, edit and share HQL queries within organisations
+\item Took a leadership role in the development group and assumed responsibility for key features and maintenance
+\end{tightitemize}
+
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+
+\section{Projects}
+
+\location{Air Hockey Robot | Capstone Design Project}
+\begin{tightitemize}
+\item Designed and implemented a fully functioning robot capable of playing air hockey with a human opponent
+\item Constructed H-Bot mechanical system and  wrote corresponding software control system
+\item Contributed to implementation and design on software feedback loop
+\end{tightitemize}
+
+%\sectionspace % Some whitespace after the section
+
+\location{Performance Systems Labs for ECE 459}
+\begin{tightitemize}
+\item Wrote OpenCL code to parallelise N-body simulations using both brute force and far field approximation techniques on the GPU
+\item Implementing manual parallelisation with Pthreads and C++11 async I/O
+\item Utilised compiler optimisations and OpenMP to automatically parallelise large tasks
+\end{tightitemize}
+
+%\sectionspace % Some whitespace after the section
+
+\location{Custom MPEG Decoder for ECE 423}
+\begin{tightitemize}
+\item Designed, implemented, integrated and tested a simplified video decoder application on a multicore FPGA
+\item Designed custom instructions for Altera Cyclone DE2 FPGA in VHDL
+\item Wrote software layer in C to interact with user and play back video at 24 fps
+\end{tightitemize}
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
