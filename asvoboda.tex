@@ -19,14 +19,13 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
 
-\hypersetup{
-  colorlinks=false,% hyperlinks will be black
-  linkbordercolor=blue,% hyperlink borders will be red
-  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
-}
+\pagestyle{fancy}
+\fancyhf{}
 
+\rfoot{Page \thepage \hspace{1pt}}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -64,28 +63,25 @@
 \section{Core Skills}
 
 \subsection{Programming}
-
 golang \textbullet{} Python \textbullet{} Java \\
 Powershell \textbullet{} bash \\ 
-
-\sectionspace % Some whitespace after the section
+\sectionsep
 
 \subsection{Utilities}
 git \textbullet{} docker \\
 terraform \textbullet{} packer \textbullet{} AWS \\
 nomad \textbullet{} vault \\
-
-\sectionspace % Some whitespace after the section
+\sectionsep
 
 \subsection{OS}
 Linix \textbullet{} Windows \\
+\sectionsep
 
 %------------------------------------------------
 % Coursework
 %------------------------------------------------
 
 \section{Coursework}
-
 Operating Systems \\
 Distributed Systems \\
 Embedded Software \\
@@ -94,6 +90,7 @@ Compilers \\
 Database Systems \\
 Computer Networks \\
 Programming for Performance 
+\sectionsep
 
 %------------------------------------------------
 % Links
@@ -103,6 +100,8 @@ Programming for Performance
 
 Github:// \href{https://github.com/asvoboda}{\bf asvoboda} \\
 LinkedIn:// \href{https://ca.linkedin.com/pub/andrew-svoboda/80/645/667}{\bf Andrew Svoboda}
+
+\sectionsep
 
 %------------------------------------------------
 % Hobbies
@@ -118,17 +117,18 @@ Reading and Murder Most Foul \\
 Drawing and Painting \\
 Analog Photography and Film Development
 
-\sectionspace % Some whitespace after the section
+\sectionsep
 
 %----------------------------------------------------------------------------------------
 
-\end{minipage} % The end of the left column
-\hfill
 %
 %----------------------------------------------------------------------------------------
 %	RIGHT COLUMN
 %----------------------------------------------------------------------------------------
 %
+
+\end{minipage} 
+\hfill
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
 
 %------------------------------------------------
@@ -137,12 +137,12 @@ Analog Photography and Film Development
 
 \section{Personal Objectives}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
+\begin{tightemize}
 \item Gain additional experience with complex software systems and architecture design
-%\item Develop and improve hardware/firmware skills
 \item Reinforce and continue to develop high quality Software Engineering skills
 \item Work on technically challenging and rewarding projects
-\end{tightitemize}
+\end{tightemize}
+\sectionsep
 
 %------------------------------------------------
 % Experience
@@ -153,24 +153,27 @@ Analog Photography and Film Development
 \runsubsection{\href{https://www.palantir.com/}{Palantir}}
 \descript{| Software Engineer}
 
+%------------------------------------------------
+
 \location{Sept 2015 - Present | Palo Alto, CA}
-\begin{tightitemize}
+\begin{tightemize}
 \item Automating highly available and redundant services on top of AWS and \href{https://www.nomadproject.io}{\bf Nomad} with a focus on Infrastructure as Code using Terraform and Packer
 \item Primary architect and maintainer of highly available, fully automated multisite Splunk deployment indexing 4TB/day
 \item Refactored single region deployment of artifact content system to a multi-region and geo-aware configuration
-\end{tightitemize}
+\end{tightemize}
+\sectionsep
 
-\sectionspace % Some whitespace after the section
+%------------------------------------------------
+
 \runsubsection{\href{https://www.palantir.com/}{Palantir}}
 \descript{| Simulation Software Engineering Intern}
 
 \location{Sept 2014 - Dec 2014 | Palo Alto, CA}
-\begin{tightitemize}
+\begin{tightemize}
 \item Implemented and helped to design concurrent testing strategy for automation of installation across multiple disparate product services
 \item Contributed to implementation of deployment automation for product teams by providing packaging and publishing Gradle tasks
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
+\end{tightemize}
+\sectionsep
 
 %------------------------------------------------
 
@@ -178,12 +181,13 @@ Analog Photography and Film Development
 \descript{| Serious Software Engineering Intern}
 
 \location{Sept 2013 - Dec 2013 | New York, NY}
-\begin{tightitemize}
+\begin{tightemize}
 \item Actively maintained the platform, fixing numerous bugs and issues while pushing new features to production daily
 \item Created infrastructure for push notifications on the back-end system and modified the iOS and Android mobile clients to support push notifications
 \item Updated build and deployment system to be more reliable and robust
 \item Upgraded internal infrastructure for monitoring application performance and health
-\end{tightitemize}
+\end{tightemize}
+\sectionsep
 
 %----------------------------------------------------------------------------------------
 
@@ -194,48 +198,19 @@ Analog Photography and Film Development
 \section{Projects}
 
 \location{Air Hockey Robot | Capstone Design Project}
-\begin{tightitemize}
-\item Designed, implemented and constructed a fully functioning robot capable of playing air hockey with a human opponent
+\begin{tightemize}
+\item Designed, implemented and constructed a fully functioning air hockey robot capable of playing (and scoring) against a human opponent
 \item Constructed and designed H-Bot mechanical system, and wrote corresponding software control system in C to receive input from main game system to control paddle position
-\item Contributed to implementation and design of software feedback loop and game algorithms
-\end{tightitemize}
+\end{tightemize}
 
 \location{Custom MPEG Decoder for ECE 423}
-\begin{tightitemize}
+\begin{tightemize}
 \item Designed, implemented, integrated and tested a simplified video decoder application on a multicore FPGA
 \item Designed custom instructions for Altera Cyclone DE2 FPGA in VHDL
 \item Wrote software layer in C to interact with user and play back video at 24 fps with simple play/pause/skip functionality
-\end{tightitemize}
+\end{tightemize}
 
-\location{Performance Systems Labs for ECE 459}
-\begin{tightitemize}
-\item Used OpenCL to parallelise N-body simulations using both brute force and far field approximation techniques on the GPU
-\item Implemented manual parallelisation with Pthreads and C++11 async I/O
-\item Utilised compiler optimisations and OpenMP to automatically parallelise large tasks
-\end{tightitemize}
+\sectionsep
 
-%\sectionspace % Some whitespace after the section
-
-\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
-%	SECOND PAGE (EXAMPLE)
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-
-%\section{Example Section}
-
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
-%\section{Example Section 2}
-
-%\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
-
-\end{document}
+\end{minipage} 
+\end{document} \documentclass[]{article}
